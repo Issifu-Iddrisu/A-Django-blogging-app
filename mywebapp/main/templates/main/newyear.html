@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+
+
+{% block body %}
+
+{% if date %}
+<h1>YES</h1>
+{% else %}
+<h1>NO</h1>
+{% endif %}
+
+<p>Go back to home  <a href="{% url 'homepage' %}">Link</a></p>
+
+{% endblock  %}

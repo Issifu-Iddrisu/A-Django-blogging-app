@@ -1,0 +1,18 @@
+
+{% extends 'main/base.html' %}
+
+
+{% block body %}
+
+<div class = "container">
+    <h1 style="text-align: left; background-color: rgb(51, 192, 197) ; padding: 10px;">Log in</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+    <p>Do not have an account. <a href="{% url 'main:signup' %}">sign up</a> </p>
+    
+</div>
+
+{% endblock  %}
